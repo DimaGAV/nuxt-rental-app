@@ -1,0 +1,1 @@
+# nuxt-rental-app
