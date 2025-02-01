@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "title": "Коттедж Barn House",
+  "description": "Просторный коттедж в стиле Barn House...",
+  "price": 8900,
+  "discountPrice": 16000,
+  "features": ["Сауна", "Бассейн", "Можно с животными"],
+  "images": ["/images/barn-house-1.jpg", "/images/barn-house-2.jpg"]
+}

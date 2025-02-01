@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Коттедж Barn House",
+    "price": 8900,
+    "discountPrice": 16000,
+    "location": "Золотарёвка",
+    "image": "/images/barn-house.jpg",
+    "features": ["Сауна", "Бассейн", "Можно с животными"]
+  },
+  {
+    "id": 2,
+    "title": "Коттедж A-frame",
+    "price": 10000,
+    "discountPrice": 14000,
+    "location": "Октябрьский",
+    "image": "/images/a-frame.jpg",
+    "features": ["Купель", "Банный чан"]
+  }
+]
