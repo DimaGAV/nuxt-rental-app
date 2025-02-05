@@ -10,9 +10,9 @@ const houses = ref([]);
 onMounted(async () => {
   try {
     const response = await fetch("api/houses");
-    /*  if (!response.ok) {
+    if (!response.ok) {
       throw new Error("Ошибка загрузки данных");
-    } */
+    }
     houses.value = await response.json();
   } catch (error) {
     console.error("Ошибка загрузки данных", error);
