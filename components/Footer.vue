@@ -1,5 +1,5 @@
 <template lang="">
-  <div></div>
+  <div>Приветики</div>
 </template>
 <script>
 export default {};

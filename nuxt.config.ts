@@ -3,7 +3,15 @@ export default defineNuxtConfig({
   compatibilityDate: "2025-01-29",
   devtools: { enabled: true },
   css: ["@/styles/main.scss"],
-  modules: ["@nuxt/image"],
+  modules: [
+    "@nuxt/image",
+    [
+      "@vee-validate/nuxt",
+      {
+        autoImports: true,
+      },
+    ],
+  ],
   image: {
     format: ["webp", "jpg"],
     screens: {

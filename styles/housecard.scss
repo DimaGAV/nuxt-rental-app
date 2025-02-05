@@ -1,0 +1,78 @@
+.house-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+.house-card:hover {
+  transform: translateY(-5px);
+}
+.house-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.house-content {
+  padding: 1rem;
+}
+.house-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.house-location {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+.house-info {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+.house-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0;
+  list-style: none;
+}
+.house-tags li {
+  background: #f0f0f0;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+.house-prices {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.house-price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #28a745;
+}
+.house-old-price {
+  font-size: 0.9rem;
+  text-decoration: line-through;
+  color: #888;
+}
+.house-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  color: #fff;
+  background: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.house-button:hover {
+  background: #0056b3;
+}

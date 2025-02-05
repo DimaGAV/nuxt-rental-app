@@ -1,9 +1,9 @@
 <template>
   <div>
-    <Header />
+    <!-- <Header /> -->
     <HouseDetails :house="house" />
     <BookingForm />
-    <Footer />
+    <!-- <Footer /> -->
   </div>
 </template>
 
