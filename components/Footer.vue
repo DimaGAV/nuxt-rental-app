@@ -1,7 +1,7 @@
 <template lang="">
-  <div>Приветики</div>
+  <footer></footer>
 </template>
 <script>
 export default {};
 </script>
-<style lang=""></style>
+<style lang="scss"></style>

@@ -1,4 +1,4 @@
-<template lang="">
+<template>
   <header class="header">
     <nav class="nav">
       <NuxtLink to="/" class="logo"

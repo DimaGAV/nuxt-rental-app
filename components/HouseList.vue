@@ -2,6 +2,7 @@
   <div class="house-list">
     <HouseCard v-for="house in houses" :key="house.id" :house="house" />
   </div>
+  <button class="list-button">Больше домов</button>
 </template>
 
 <script setup>

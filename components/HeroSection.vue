@@ -1,7 +1,13 @@
-<template lang="">
-  <div>1</div>
+<template>
+  <div class="hero-section">
+    <h1>Аренда коттеджей и квартир посуточно в Пензе</h1>
+    <button>Забронировать домик</button>
+    <img src="/images/banner.jpg" alt="Главный баннер" />
+  </div>
 </template>
-<script>
+<!-- <script>
 export default {};
-</script>
-<style lang=""></style>
+</script> -->
+<style lang="scss">
+@use "@/styles/herosection.scss";
+</style>
