@@ -2,7 +2,7 @@
   <div>
     <!-- <Form /> -->
     <HeroSection />
-    <HouseList :house="houses" />
+    <HouseList :houses="houses" />
   </div>
 </template>
 

@@ -2,7 +2,16 @@
 export default defineNuxtConfig({
   compatibilityDate: "2025-01-29",
   devtools: { enabled: true },
-  css: ["@/styles/main.scss"],
+  css: ["@/assets/scss/main.scss"],
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@use "@/assets/scss/variables" as *;',
+        },
+      },
+    },
+  },
   modules: [
     "@nuxt/image",
     [

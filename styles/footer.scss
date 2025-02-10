@@ -1,0 +1,47 @@
+footer {
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  border-radius: 30px;
+  height: 360px;
+  &__top {
+    display: flex;
+  }
+}
+/* .footer-top {
+  display: flex;
+} */
+// .footer-details {
+//   color: white;
+// }
+
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+/* .footer-contacts {
+    dis
+} */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  border-top: white solid 1px;
+}
+
+.footer-bottom p {
+  display: inline-block;
+  padding-inline-end: 20px;
+}

@@ -2,7 +2,7 @@
   <header class="header">
     <nav class="nav">
       <NuxtLink to="/" class="logo"
-        ><NuxtImg src="/images/logo.svg" alt="Домик58"
+        ><img src="/images/logo.svg" alt="Домик58"
       /></NuxtLink>
       <ul class="nav-links">
         <li><NuxtLink to="/">Коттеджи</NuxtLink></li>
