@@ -11,7 +11,7 @@
         <li><NuxtLink to="/">Контакты</NuxtLink></li>
       </ul>
       <a href="tel:+79273855588" class="phone">
-        <NuxtImg src="/icons/Phone.svg" alt="phone" />
+        <img src="/icons/Phone.svg" alt="phone" />
         +7 (927) 385-55-88</a
       >
     </nav>

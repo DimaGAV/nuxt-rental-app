@@ -8,5 +8,5 @@
 
 <script setup>
 // const houses = await useFetch("/data/houses.json").then((res) => res.data);
-const { data: houses } = await useFetch("/data/houses.json");
+const { data: houses } = await useFetch("/api/houses");
 </script>

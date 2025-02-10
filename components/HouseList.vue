@@ -19,6 +19,12 @@ onMounted(async () => {
     console.error("Ошибка загрузки данных", error);
   }
 });
+defineProps({
+  houses: {
+    type: Array,
+    required: true,
+  },
+});
 </script>
 <style lang="scss">
 @use "@/styles/houselist.scss";
