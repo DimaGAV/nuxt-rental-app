@@ -1,6 +1,6 @@
 @use "@/assets/scss/variables" as *;
 
-.header {
+/* .header {
   background: #fff;
   // padding: 10px 20px;
   padding: 15px 0;
@@ -19,9 +19,6 @@
   gap: 20px;
 }
 .logo {
-  /* font-size: 20px;
-  font-weight: bold;
-  color: #007f00; */
   font-size: 1.5rem;
   font-weight: bold;
   color: $text-color;
@@ -29,4 +26,102 @@
 .phone {
   font-weight: bold;
   color: #000;
+} */
+.header {
+  background: #fff;
+  padding: 10px 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo img {
+    height: 40px;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 10px;
+
+    &--green {
+      background: #5cb85c;
+      color: #fff;
+    }
+
+    &--orange {
+      background: #f0ad4e;
+      color: #fff;
+    }
+  }
+
+  .menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin: 0 15px;
+      a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+      }
+    }
+
+    .menu__dropdown {
+      position: relative;
+      cursor: pointer;
+
+      .submenu {
+        display: none;
+        position: absolute;
+        background: #fff;
+        top: 100%;
+        left: 0;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+
+        li {
+          padding: 5px 0;
+        }
+      }
+
+      &:hover .submenu {
+        display: block;
+      }
+    }
+  }
+
+  &__phone {
+    display: flex;
+    align-items: center;
+
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      line-height: normal;
+      // font-variant-numeric: tabular-nums;
+    }
+
+    img {
+      // height: 20px;
+      margin-right: 5px;
+    }
+  }
 }
