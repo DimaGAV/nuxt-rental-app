@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "name": "Коттедж Barn House",
+    "price": "от 8 900 ₽/сутки",
+    "oldPrice": "11 000 ₽",
+    "image": "/images/barn-house.jpg",
+    "tags": ["сауна", "бассейн", "можно с животными"],
+    "area": "100 м²",
+    "capacity": "до 6",
+    "location": "Золотаревка"
+  },
+  {
+    "id": 2,
+    "name": "Коттедж A-frame",
+    "price": "от 10 000 ₽/сутки",
+    "oldPrice": "14 000 ₽",
+    "image": "/images/a-frame.jpg",
+    "tags": ["купель", "банный чан"],
+    "area": "70 м²",
+    "capacity": "до 6",
+    "location": "Октябрьский"
+  },
+  {
+    "id": 3,
+    "name": "Дом в Дубраве",
+    "price": "15 000 ₽/сутки",
+    "oldPrice": "32 000 ₽",
+    "image": "/images/dubrava.jpg",
+    "tags": ["баня"],
+    "area": "110 м²",
+    "capacity": "до 6",
+    "location": "р-н Дубрава"
+  },
+  {
+    "id": 4,
+    "name": "Коттедж Жемчужный",
+    "price": "от 5 900 ₽/сутки",
+    "oldPrice": "10 000 ₽",
+    "image": "/images/pearl.jpg",
+    "tags": ["купель", "баня", "джакузи"],
+    "area": "150 м²",
+    "capacity": "до 20",
+    "location": "Первомайский"
+  }
+]
