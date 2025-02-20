@@ -1,32 +1,5 @@
 @use "@/assets/scss/variables" as *;
 
-/* .header {
-  background: #fff;
-  // padding: 10px 20px;
-  padding: 15px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 20px;
-}
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: $text-color;
-}
-.phone {
-  font-weight: bold;
-  color: #000;
-} */
 .header {
   background: #fff;
   padding: 10px 20px;
@@ -55,13 +28,13 @@
     margin-right: 10px;
 
     &--green {
-      background: #5cb85c;
-      color: #fff;
+      background: $default-color-green;
+      color: $text-color-button;
     }
 
     &--orange {
-      background: #f0ad4e;
-      color: #fff;
+      background: $default-color-orange;
+      color: $text-color-button;
     }
   }
 
@@ -116,11 +89,9 @@
       color: #333;
       font-weight: bold;
       line-height: normal;
-      // font-variant-numeric: tabular-nums;
     }
 
     img {
-      // height: 20px;
       margin-right: 5px;
     }
   }

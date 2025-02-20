@@ -66,7 +66,7 @@
           v-if="message"
           :class="[
             'booking__message',
-            sucsses ? 'booking__messagge--sucsses' : 'booking__message--error',
+            success ? 'booking__messagge--success' : 'booking__message--error',
           ]"
         >
           {{ message }}
@@ -76,7 +76,73 @@
   </div>
 </template>
 
-<script>
-export default {};
+<script setup>
+import { ref } from "vue";
+import { Form, Field, defineRule, configure } from "vee-validate";
+import { required, min } from "@vee-validate/rules";
+
+defineRule("required", required);
+defineRule("min", min);
+defineRule(
+  "phone",
+  (value) =>
+    /^(\+7|8)?[\s\-]?\(?\d{3}\)?[\s\-]?\d{3}[\s\-]?\d{2}[\s\-]?\d{2}$/.test(
+      value
+    ) || "Введите корректный номер телефона"
+);
+
+configure({
+  validateOnInput: true,
+});
+
+const form = ref({
+  name: "",
+  phone: "",
+  comment: "",
+  agree: false,
+});
+
+/* const onSubmit = (values) => {
+  console.log("Отправка данных:", values);
+}; */
+
+const isSubmitting = ref(false);
+const message = ref("");
+const success = ref(false);
+
+const submitForm = () => {
+  isSubmitting.value = true;
+  message.value = false;
+
+  setTimeout(() => {
+    isSubmitting.value = false;
+
+    if (Math.random() > 0.3) {
+      success.value = true;
+      message.value = "Форма успешно отправлена!";
+      form.value = { name: "", phone: "", comment: "", agree: false };
+    } else {
+      success.value = false;
+      message.value = "Ошибка при отправке. Попробуйте ещё раз";
+    }
+  }, 2000);
+};
 </script>
-<style lang=""></style>
+
+<style lang="scss" scoped>
+@use "@/styles/bookingform.scss";
+
+.booking__message {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+
+  &--success {
+    color: green;
+  }
+
+  &--error {
+    color: red;
+  }
+}
+</style>

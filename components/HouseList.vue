@@ -1,8 +1,11 @@
 <template>
   <div class="house-list">
-    <HouseCard v-for="house in houses" :key="house.id" :house="house" />
+    <h2 class="house-list__header">Выберите дом по душе</h2>
+    <div class="house-list__card">
+      <HouseCard v-for="house in houses" :key="house.id" :house="house" />
+    </div>
+    <button class="house-list__button">Больше домов</button>
   </div>
-  <button class="list-button">Больше домов</button>
 </template>
 
 <script setup>

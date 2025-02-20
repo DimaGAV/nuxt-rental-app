@@ -1,7 +1,7 @@
 <template lang="">
   <footer class="footer">
     <div class="footer__top">
-      <div class="footer-details">
+      <div class="footer__details">
         <img src="/images/logo-footer.svg" />
         <p>Аренда домов и квартир</p>
         <p>
@@ -10,9 +10,9 @@
           ОГРНИП 321583500034390
         </p>
       </div>
-      <div class="footer-menu">
+      <div class="footer__menu">
         <div>
-          <ul class="footer-houses">
+          <ul class="footer__houses">
             <li>Коттеджи</li>
             <li>Квартиры</li>
             <li>Развлечения</li>
@@ -20,7 +20,7 @@
             <li>Акции</li>
           </ul>
         </div>
-        <div class="footer-about">
+        <div class="footer__about">
           <ul>
             <li>О нас</li>
             <li>Блог</li>
@@ -30,7 +30,7 @@
           </ul>
         </div>
       </div>
-      <ul class="footer-contacts">
+      <ul class="footer__contacts">
         <li>
           <a href="tel:+79273855588" class="footer-phone">
             +7 (927) 385-55-88</a
@@ -44,7 +44,7 @@
         <img src="/images/social.png" />
       </ul>
     </div>
-    <div class="footer-bottom">
+    <div class="footer__bottom">
       <div>
         <p>© 2023 Домик 58. Все права защищены</p>
         <p>Политика конфиденциальности</p>
