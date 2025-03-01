@@ -1,14 +1,20 @@
 <template>
   <header class="header">
-    <div class="header__container">
+    <div class="header__container center">
       <div class="header__logo">
         <img src="/images/logo.svg" alt="Домик 58" />
       </div>
 
       <nav class="header__nav">
-        <NuxtLink to="#" class="btn btn--green">Коттеджи</NuxtLink>
-        <NuxtLink to="#" class="btn btn--orange">Квартиры</NuxtLink>
-        <ul class="menu">
+        <div class="header__btn">
+          <button class="btn btn--green">
+            <NuxtLink to="#">Коттеджи</NuxtLink>
+          </button>
+          <button class="btn btn--orange">
+            <NuxtLink to="#">Квартиры</NuxtLink>
+          </button>
+        </div>
+        <ul class="header__menu">
           <li><NuxtLink to="#">Развлечения</NuxtLink></li>
           <li><NuxtLink to="#">Акции</NuxtLink></li>
           <li><NuxtLink to="#">Праздники</NuxtLink></li>
@@ -32,6 +38,7 @@
       </div>
     </div>
   </header>
+  <div class="border-bottom"></div>
 </template>
 
 <style lang="scss">
