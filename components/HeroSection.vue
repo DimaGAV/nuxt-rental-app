@@ -1,14 +1,17 @@
 <template>
-  <div class="hero-section">
-    <h1 class="hero-section__header">
-      Аренда коттеджей и квартир посуточно
-      <span class="hero-section__header--city">в Пензе</span>
-    </h1>
+  <div class="hero-section center">
+    <div class="hero-section__header">
+      <h1 class="hero-section__text">
+        Аренда коттеджей и квартир посуточно
+        <span class="hero-section__text--city">в Пензе</span>
+      </h1>
 
-    <!-- Кнопка для открытия модального окна -->
-    <button class="hero-section__button" @click="showForm = true">
-      Забронировать домик
-    </button>
+      <!-- Кнопка для открытия модального окна -->
+      <button class="hero-section__button" @click="showForm = true">
+        Забронировать домик
+      </button>
+    </div>
+
     <img src="/public/images/banner.jpg" alt="Главный баннер" />
 
     <!-- Модальное окно -->
@@ -27,7 +30,6 @@
 
 <script setup>
 import { ref, watch } from "vue";
-// import BookingForm from "@/components/BookingForm.vue";
 
 // Управление видимостью модалки
 const showForm = ref(false);

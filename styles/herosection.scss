@@ -1,11 +1,18 @@
 @use "@/assets/scss/variables" as *;
 
 .hero-section {
-  font-weight: 600px;
-  padding: 50px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   background: $background-color;
 
-  &__header {
+  /* &__header {
+    display: inline-block;
+  } */
+
+  &__text {
+    display: inline;
+    // vertical-align: bottom;
+    line-height: 110%;
     font-size: 66px;
     text-transform: uppercase;
     &--city {
@@ -14,10 +21,11 @@
   }
 
   &__button {
+    position: absolute;
     width: 360px;
     height: 48px;
-    margin: 20px 0;
-    padding: 15px 25px;
+    margin: 10px 0;
+    margin-left: 30px;
     background-color: $default-color-orange;
     color: #fff;
     border: none;
@@ -30,8 +38,9 @@
     }
   }
 
-  &__image {
-    margin-top: 30px;
+  img {
+    // width: 480px;
+    margin-top: 24px;
     width: 100%;
     border-radius: 15px;
     object-fit: cover;

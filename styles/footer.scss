@@ -1,9 +1,11 @@
+@use "@/assets/scss/variables" as *;
+
 footer {
-  color: white;
+  color: $text-color-button;
 }
 
 a {
-  color: white;
+  color: $text-color-button;
 }
 
 ul {
@@ -16,14 +18,42 @@ ul {
   border-radius: 30px 30px 0 0;
   height: 360px;
   &__top {
+    height: 282px;
     display: flex;
     justify-content: space-between;
-    padding: 30px 20px 100px 20px;
+    align-items: flex-start;
+    padding-top: 30px;
+  }
+  &__details {
+    width: 322px;
+  }
+
+  &__details p {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(185, 192, 192);
+    line-height: 140%;
+    margin-top: 12px;
   }
   &__menu {
     display: flex;
     justify-content: space-between;
-    gap: 100px;
+    gap: 30px;
+  }
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 12px;
+    &--phone {
+      font-size: 24px;
+      font-weight: 600;
+    }
+    &--email {
+      font-size: 20px;
+      font-weight: 500;
+    }
   }
 
   &__bottom {
@@ -38,4 +68,13 @@ ul {
     display: inline-block;
     padding-inline-end: 20px;
   }
+}
+.menu-items {
+  width: 207px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+  line-height: 140%;
 }

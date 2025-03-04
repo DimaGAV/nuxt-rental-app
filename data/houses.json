@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Коттедж Barn House",
-    "price": "от 8 900 ₽/сутки",
+    "price": "от 8 900 ₽",
     "oldPrice": "11 000 ₽",
     "image": "/images/barn-house.jpg",
     "tags": ["сауна", "бассейн", "можно с животными"],
@@ -13,7 +13,7 @@
   {
     "id": 2,
     "name": "Коттедж A-frame",
-    "price": "от 10 000 ₽/сутки",
+    "price": "от 10 000 ₽",
     "oldPrice": "14 000 ₽",
     "image": "/images/a-frame.jpg",
     "tags": ["купель", "банный чан"],
@@ -24,7 +24,7 @@
   {
     "id": 3,
     "name": "Дом в Дубраве",
-    "price": "15 000 ₽/сутки",
+    "price": "15 000 ₽",
     "oldPrice": "32 000 ₽",
     "image": "/images/dubrava.jpg",
     "tags": ["баня"],
@@ -35,7 +35,7 @@
   {
     "id": 4,
     "name": "Коттедж Жемчужный",
-    "price": "от 5 900 ₽/сутки",
+    "price": "от 5 900 ₽",
     "oldPrice": "10 000 ₽",
     "image": "/images/pearl.jpg",
     "tags": ["купель", "баня", "джакузи"],

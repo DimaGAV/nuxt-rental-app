@@ -45,7 +45,7 @@
       .submenu {
         display: none;
         position: absolute;
-        background: #fff;
+        background: $background-color;
         top: 100%;
         left: 0;
         padding: 10px;
@@ -81,18 +81,15 @@
   }
 
   &__phone {
-    display: flex;
-    align-items: center;
-
     a {
       display: flex;
       align-items: center;
-      color: #333;
+      color: rgb(4, 42, 43);
       font-weight: 700;
     }
 
     img {
-      margin-right: 5px;
+      margin-right: 8px;
     }
   }
 }

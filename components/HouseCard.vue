@@ -13,17 +13,22 @@
           <div class="info"><img src="/icons/house.svg" />{{ house.area }}</div>
         </div>
       </div>
-      <h3 class="house-card__title">{{ house.name }}</h3>
-      <div class="house-card__prices">
-        <span class="house-card__price">{{ house.price }}</span>
-        <span class="house-card__old-price" v-if="house.oldPrice">{{
-          house.oldPrice
-        }}</span>
+      <div class="house-card__bottom">
+        <div>
+          <h3 class="house-card__title">{{ house.name }}</h3>
+          <div class="house-card__prices">
+            <span class="house-card__price">{{ house.price }}</span>
+            <span class="house-card__price--day">/сутки</span>
+            <span class="house-card__old-price" v-if="house.oldPrice"
+              >от {{ house.oldPrice }}</span
+            >
+          </div>
+        </div>
+        <button class="house-card__button">Подробнее</button>
       </div>
       <ul class="house-card__tags">
         <li v-for="tag in house.tags" :key="tag">{{ tag }}</li>
       </ul>
-      <button class="house-card__button">Подробнее</button>
     </div>
   </div>
 </template>
