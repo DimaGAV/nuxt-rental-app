@@ -60,13 +60,14 @@ ul {
     display: flex;
     justify-content: space-between;
     border-top: white solid 1px;
-    height: 40px;
     align-items: center;
-    padding: 0 20px;
+    padding-top: 16px;
+    padding-bottom: 26px;
   }
   &__bottom p {
     display: inline-block;
-    padding-inline-end: 20px;
+    font-size: 14px;
+    padding-inline-end: 24px;
   }
 }
 .menu-items {
@@ -77,4 +78,48 @@ ul {
   align-items: flex-start;
   gap: 12px;
   line-height: 140%;
+}
+.social__item {
+  display: inline-block;
+  margin-left: 12px;
+}
+.social__item:first-child {
+  margin: 0;
+}
+.social__link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.vk {
+  background-image: url(/icons/vk.png);
+}
+.ok {
+  background-image: url(/icons/ok.png);
+}
+.insta {
+  background-image: url(/icons/insta.png);
+}
+.youtube {
+  background-image: url(/icons/youtube.png);
+}
+.telegram {
+  background-image: url(/icons/telegram.png);
+}
+.whatsapp {
+  background-image: url(/icons/whatsapp.png);
+}
+.hh {
+  background-image: url(/icons/hh.png);
+}
+.create {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.create p {
+  padding: 0;
 }

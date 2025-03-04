@@ -11,18 +11,18 @@
       </div>
       <div class="footer__menu">
         <ul class="menu-items">
-          <li>Коттеджи</li>
-          <li>Квартиры</li>
-          <li>Развлечения</li>
-          <li>Праздники</li>
-          <li>Акции</li>
+          <li><a href="#">Коттеджи</a></li>
+          <li><a href="#">Квартиры</a></li>
+          <li><a href="#">Развлечения</a></li>
+          <li><a href="#">Праздники</a></li>
+          <li><a href="#">Акции</a></li>
         </ul>
         <ul class="menu-items">
-          <li>О нас</li>
-          <li>Блог</li>
-          <li>Сотрудничество</li>
-          <li>Работа у нас</li>
-          <li>Контакты</li>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Блог</a></li>
+          <li><a href="#">Сотрудничество</a></li>
+          <li><a href="#">Работа у нас</a></li>
+          <li><a href="#">Контакты</a></li>
         </ul>
       </div>
       <ul class="footer__contacts">
@@ -36,7 +36,31 @@
             >domik58partner@gmail.com</a
           >
         </li>
-        <img src="/images/social.png" />
+        <div class="wrapper">
+          <ul class="social">
+            <li class="social__item vk">
+              <a href="" class="social__link"></a>
+            </li>
+            <li class="social__item ok">
+              <a href="" class="social__link"></a>
+            </li>
+            <li class="social__item insta">
+              <a href="" class="social__link"></a>
+            </li>
+            <li class="social__item youtube">
+              <a href="" class="social__link"></a>
+            </li>
+            <li class="social__item telegram">
+              <a href="" class="social__link"></a>
+            </li>
+            <li class="social__item whatsapp">
+              <a href="" class="social__link"></a>
+            </li>
+            <li class="social__item hh">
+              <a href="" class="social__link"></a>
+            </li>
+          </ul>
+        </div>
       </ul>
     </div>
     <div class="footer__bottom">
@@ -45,7 +69,7 @@
         <p>Политика конфиденциальности</p>
         <p>Договор оферты</p>
       </div>
-      <div>
+      <div class="create">
         <p>Created by</p>
         <img src="/images/Match-agensy-logo 1 1.svg" />
       </div>
