@@ -27,12 +27,12 @@
       </div>
       <ul class="footer__contacts">
         <li>
-          <a href="tel:+79273855588" class="footer__contacts--phone">
+          <a href="tel:+79273855588" class="footer__phone">
             +7 (927) 385-55-88</a
           >
         </li>
         <li>
-          <a href="domik58partner@gmail.com" class="footer__contacts--email"
+          <a href="domik58partner@gmail.com" class="footer__email"
             >domik58partner@gmail.com</a
           >
         </li>

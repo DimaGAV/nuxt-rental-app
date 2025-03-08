@@ -1,5 +1,5 @@
 <template>
-  <div class="house-card">
+  <article class="house-card">
     <div class="house-card__content">
       <div class="house-card__top">
         <img :src="house.image" :alt="house.name" class="house-card__image" />
@@ -29,8 +29,9 @@
       <ul class="house-card__tags">
         <li v-for="tag in house.tags" :key="tag">{{ tag }}</li>
       </ul>
+      <button class="house-card__button tablet">Подробнее</button>
     </div>
-  </div>
+  </article>
 </template>
 <script setup>
 defineProps({

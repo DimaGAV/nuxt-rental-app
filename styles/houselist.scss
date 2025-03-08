@@ -3,8 +3,11 @@
 .house-list {
   &__card {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(668px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 24px;
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__header {
@@ -12,15 +15,20 @@
     font-size: 42px;
     margin-top: 80px;
     margin-bottom: 36px;
+    @media (max-width: 1024px) {
+      font-size: 28px;
+      margin-top: 74px;
+      margin-bottom: 24px;
+    }
   }
 
   &__button {
-    width: 440px;
+    width: 100%;
+    max-width: 440px;
     height: 60px;
     display: block;
     margin: 24px auto;
     margin-bottom: 80px;
-    // padding: 20px 24px;
     background-color: $default-color-orange;
     color: $text-color-button;
     border: none;
