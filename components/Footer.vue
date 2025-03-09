@@ -16,8 +16,6 @@
           <li><a href="#">Развлечения</a></li>
           <li><a href="#">Праздники</a></li>
           <li><a href="#">Акции</a></li>
-          <!-- </ul> -->
-          <!-- <ul class="menu-items"> -->
           <li><a href="#">О нас</a></li>
           <li><a href="#">Блог</a></li>
           <li><a href="#">Сотрудничество</a></li>

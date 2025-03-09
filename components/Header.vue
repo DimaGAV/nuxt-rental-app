@@ -41,11 +41,6 @@
           <li><a href="#">Праздники</a></li>
           <li class="mobmenu__dropdown">
             <span>О нас</span>
-            <ul class="submenu">
-              <li><a href="#">О нас</a></li>
-              <li><a href="#">Сотрудничество</a></li>
-              <li class="submenu__item"><a href="#">Работа у нас</a></li>
-            </ul>
           </li>
           <li><a href="#">Блог</a></li>
           <li><a href="#">Контакты</a></li>
@@ -56,10 +51,6 @@
                 +7 (927) 385-55-88
               </a>
             </div>
-            <!-- <a href="tel:+79273855588">
-              <img src="/icons/phone.svg" alt="Телефон" />
-              <span class="text-black">+7 (927) 385-55-88</span>
-            </a> -->
           </li>
         </ul>
       </nav>

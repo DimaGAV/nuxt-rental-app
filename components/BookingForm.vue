@@ -124,7 +124,6 @@ configure({
   validateOnInput: true,
 });
 
-// Получаем проп `visible` и событие `close`
 const props = defineProps({
   visible: Boolean,
 });
@@ -143,7 +142,7 @@ const success = ref(false);
 
 // Закрытие формы
 const closeModal = () => {
-  emit("close"); // Вызываем событие закрытия
+  emit("close");
 };
 
 const submitForm = () => {
@@ -157,7 +156,7 @@ const submitForm = () => {
       success.value = true;
       message.value = "Форма успешно отправлена!";
       form.value = { name: "", phone: "", comment: "", agree: false };
-      // closeModal();
+      closeModal();
     } else {
       success.value = false;
       message.value = "Ошибка при отправке. Попробуйте ещё раз";

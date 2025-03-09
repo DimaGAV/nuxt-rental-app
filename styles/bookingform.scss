@@ -68,12 +68,12 @@
     width: 460px;
     height: 46px;
     padding: 16px 12px;
-    border: 1px solid rgb(185, 192, 192);
+    border: 1px solid $footer-gray-text;
     border-radius: 24px;
     font-size: 16px;
     font-family: $font-family;
     font-variant-numeric: lining-nums;
-    color: rgb(135, 137, 137);
+    color: $gray-text;
     outline: none;
     transition: border 0.3s;
 
@@ -129,6 +129,29 @@
   accent-color: $default-color-orange;
   width: 18px;
   height: 18px;
-  border: 1px solid rgb(185, 192, 192);
+  border: 1px solid $footer-gray-text;
   border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .booking {
+    &__modal {
+      max-width: 328px;
+      padding: 32px;
+    }
+    &__close {
+      top: 10px;
+      right: 10px;
+    }
+    &__title {
+      font-size: 24px;
+    }
+    &__button {
+      width: 100%;
+    }
+    &__input,
+    &__textarea {
+      width: 100%;
+    }
+  }
 }
