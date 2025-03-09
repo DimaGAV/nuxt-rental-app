@@ -1,8 +1,13 @@
 <template>
   <header class="header">
     <div class="header__container center">
+      <nav class="header__burger">
+        <div class="burger-item"></div>
+        <div class="burger-item"></div>
+        <div class="burger-item"></div>
+      </nav>
       <div class="header__logo">
-        <img src="/images/logo.svg" alt="Домик 58" />
+        <a href="/"><img src="/images/logo.svg" alt="Домик 58" /></a>
       </div>
 
       <nav class="header__nav">
@@ -33,7 +38,7 @@
       <div class="header__phone">
         <a href="tel:+79273855588">
           <img src="/icons/phone.svg" alt="Телефон" />
-          +7 (927) 385-55-88
+          <span class="header__phone--number">+7 (927) 385-55-88</span>
         </a>
       </div>
     </div>

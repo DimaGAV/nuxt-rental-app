@@ -16,8 +16,8 @@
           <li><a href="#">Развлечения</a></li>
           <li><a href="#">Праздники</a></li>
           <li><a href="#">Акции</a></li>
-        </ul>
-        <ul class="menu-items">
+          <!-- </ul> -->
+          <!-- <ul class="menu-items"> -->
           <li><a href="#">О нас</a></li>
           <li><a href="#">Блог</a></li>
           <li><a href="#">Сотрудничество</a></li>
@@ -64,12 +64,12 @@
       </ul>
     </div>
     <div class="footer__bottom">
-      <div>
+      <div class="footer__doc">
         <p>© 2023 Домик 58. Все права защищены</p>
-        <p>Политика конфиденциальности</p>
-        <p>Договор оферты</p>
+        <a href="#">Политика конфиденциальности</a>
+        <a href="#">Договор оферты</a>
       </div>
-      <div class="create">
+      <div class="footer__dev">
         <p>Created by</p>
         <img src="/images/Match-agensy-logo 1 1.svg" />
       </div>

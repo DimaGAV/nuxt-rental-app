@@ -41,7 +41,10 @@
     }
 
     &:hover {
-      background-color: $hover-color-orange;
+      background: $hover-color-orange;
+    }
+    &:active {
+      background: $active-color-orange;
     }
   }
 }
