@@ -1,9 +1,9 @@
 @use "variables" as *;
-
 @use "@/styles/header";
 @use "@/styles/footer";
 @use "@/styles/houselist";
 @use "@/styles/housecard";
+@use "@/styles/bookingform";
 
 * {
   margin: 0;
@@ -12,15 +12,27 @@
 }
 
 body {
+  max-width: 1440px;
+  margin: 0 auto;
   font-family: $font-family;
+  font-variant-numeric: lining-nums;
   color: $text-color;
   background-color: $background-color;
-  line-height: 1.5;
 }
 
 a {
   text-decoration: none;
-  color: inherit;
+  display: block;
+  color: $text-color;
+}
+
+.center {
+  padding-left: 40px;
+  padding-right: 40px;
+  @media (max-width: 1024px) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 button {
@@ -29,7 +41,6 @@ button {
 }
 
 .container {
-  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }

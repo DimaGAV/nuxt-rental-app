@@ -3,31 +3,53 @@
 .house-list {
   &__card {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(668px, 1fr));
-    gap: 1.5rem;
-    padding: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
   }
 
   &__header {
     text-transform: uppercase;
     font-size: 42px;
+    margin-top: 80px;
+    margin-bottom: 36px;
   }
 
   &__button {
-    width: 440px;
+    width: 100%;
+    max-width: 440px;
     height: 60px;
     display: block;
-    margin: 50px auto;
-    padding: 20px 24px;
+    margin: 24px auto;
+    margin-bottom: 80px;
     background-color: $default-color-orange;
-    color: #fff;
+    color: $text-color-button;
     border: none;
     border-radius: 30px;
     font-size: 18px;
     cursor: pointer;
 
+    svg {
+      margin-left: 8px;
+    }
+
     &:hover {
-      background-color: $hover-color-orange;
+      background: $hover-color-orange;
+    }
+    &:active {
+      background: $active-color-orange;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .house-list {
+    &__card {
+      grid-template-columns: 1fr;
+    }
+    &__header {
+      font-size: 28px;
+      margin-top: 74px;
+      margin-bottom: 24px;
     }
   }
 }

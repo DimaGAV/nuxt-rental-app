@@ -22,17 +22,16 @@
   &__modal {
     position: relative;
     background: $background-color;
-    padding: 25px;
-    border-radius: 12px;
-    max-width: 400px;
+    padding: 40px;
+    border-radius: 32px;
+    max-width: 540px;
     width: 100%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   }
 
   &__close {
     position: absolute;
-    top: 10px;
-    right: 15px;
+    top: 16px;
+    right: 16px;
     font-size: 24px;
     background: none;
     border: none;
@@ -40,22 +39,23 @@
   }
 
   &__title {
-    font-size: 22px;
-    font-weight: bold;
-    color: $text-color;
-    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 24px;
   }
 
   &__text {
-    font-size: 14px;
-    color: $text-color;
-    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: left;
+    margin-bottom: 32px;
   }
 
   &__form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 16px;
   }
 
   &__field {
@@ -65,11 +65,15 @@
 
   &__input,
   &__textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid;
-    border-radius: 6px;
-    font-size: 14px;
+    width: 460px;
+    height: 46px;
+    padding: 16px 12px;
+    border: 1px solid $footer-gray-text;
+    border-radius: 24px;
+    font-size: 16px;
+    font-family: $font-family;
+    font-variant-numeric: lining-nums;
+    color: $gray-text;
     outline: none;
     transition: border 0.3s;
 
@@ -80,7 +84,7 @@
 
   &__textarea {
     resize: none;
-    height: 80px;
+    height: 90px;
   }
 
   &__error {
@@ -92,22 +96,62 @@
   &__checkbox {
     display: flex;
     align-items: center;
-    gap: 5px;
-    font-size: 12px;
+    gap: 12px;
+    font-size: 14px;
+  }
+  &__checkbox a {
+    color: $default-color-green;
+    display: inline;
   }
 
   &__button {
-    background: $default-color-orange;
+    width: 147px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: $default-color-orange;
     color: $text-color-button;
-    padding: 12px;
     border: none;
-    border-radius: 6px;
+    border-radius: 30px;
     font-size: 16px;
+    font-weight: 600;
     cursor: pointer;
 
+    &:hover {
+      background-color: $hover-color-orange;
+    }
     &:disabled {
       background: gray;
       cursor: not-allowed;
+    }
+  }
+}
+.checkbox {
+  accent-color: $default-color-orange;
+  width: 18px;
+  height: 18px;
+  border: 1px solid $footer-gray-text;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .booking {
+    &__modal {
+      max-width: 328px;
+      padding: 32px;
+    }
+    &__close {
+      top: 10px;
+      right: 10px;
+    }
+    &__title {
+      font-size: 24px;
+    }
+    &__button {
+      width: 100%;
+    }
+    &__input,
+    &__textarea {
+      width: 100%;
     }
   }
 }

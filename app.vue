@@ -1,9 +1,8 @@
 <template>
-  <div>
-    <Header />
-    <main>
-      <NuxtPage />
-    </main>
-    <Footer />
-  </div>
+  <Header />
+  <!-- <BookingForm /> -->
+  <main>
+    <NuxtPage />
+  </main>
+  <Footer />
 </template>
