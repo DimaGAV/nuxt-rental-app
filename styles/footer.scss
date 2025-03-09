@@ -7,6 +7,10 @@ footer {
 a {
   color: $text-color-button;
 }
+a:hover {
+  color: $hover-color-green;
+  text-decoration: underline;
+}
 
 ul {
   list-style: none;
@@ -36,9 +40,6 @@ ul {
   &__menu {
     grid-column: span 4;
     column-count: 2;
-    /* display: flex;
-    justify-content: space-between;
-    gap: 30px; */
   }
   &__contacts {
     grid-column: span 4;
@@ -53,13 +54,14 @@ ul {
     font-size: 24px;
     font-weight: 600;
     &:hover {
-      // transition: color 0.8 ease-in-out;
+      // transition: color 2 ease-in-out;
       color: $default-color-green;
     }
   }
   &__email {
     font-size: 20px;
     font-weight: 500;
+    text-decoration: underline;
     &:hover {
       color: $default-color-green;
     }
@@ -85,6 +87,9 @@ ul {
     a {
       color: $footer-gray-text;
       font-size: 14px;
+    }
+    a:hover {
+      color: $hover-color-green;
     }
   }
   &__dev {
